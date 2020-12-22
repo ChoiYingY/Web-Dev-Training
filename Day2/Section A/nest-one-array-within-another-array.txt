@@ -1,0 +1,2 @@
+// Only change code below this line
+var myArray = [["2020 now?", true], ["2021 now?", false]];
