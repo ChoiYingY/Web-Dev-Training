@@ -1,0 +1,6 @@
+function checkSign(num) {
+    // you can see it like: return(num == 0 || (num >= 0 || (num >= 0)))
+    return num == 0 ? "zero" : num >= 0 ? "positive" : "negative";
+}
+
+checkSign(10);
