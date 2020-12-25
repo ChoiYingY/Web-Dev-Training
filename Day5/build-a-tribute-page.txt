@@ -1,0 +1,83 @@
+// Website: https://codepen.io/choiyingy/pen/wvzPaYd
+// HTML
+<main id="main">
+  <h1 id="title">William Shakespeare</h1>
+  <h2 id="subtitle">The Bard of Avon</h2>
+  <div id="img-div">
+    <img class="gray-border" id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/440px-Shakespeare.jpg" alt="A portrait of William Shakespeare"></img>
+    <h4 id="img-caption">The Chandos Portrait of William Shakespeare</h4>
+  </div>
+  <p id="introduction">William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English playwright, poet, and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. His extant works, including collaborations, consist of some 39 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship.<br>
+    Shakespeare produced most of his known works between 1589 and 1613. His early plays were primarily comedies and histories and are regarded as some of the best work produced in these genres. He then wrote mainly tragedies until 1608, among them Hamlet, Romeo and Juliet, Othello, King Lear, and Macbeth, all considered to be among the finest works in the English language.
+  </p>
+  <div id="tribute-info">
+    <h2>Timeline Of Shakespeare's Life</h2>
+      <ul>
+        <li><strong>1564</strong>:  William Shakespeare born in Stratford-upon-Avon on 4/26</li>
+        <li><strong>1582</strong>:  Shakespeare marries Anne Hathaway</li>
+        <li><strong>1583</strong>:  Shakespeare’s first child, Susanna, is born</li>
+        <li><strong>1585</strong>:  Shakespeare’s twins, Judith and Hamnet, are born</li>
+        <li><strong>1592</strong>:  Shakespeare is first alluded to as a playwright, in Greene’s Groates-worth of Wit</li>
+        <li><strong>1593</strong>:  Shakespeare’s first printed poem, Venus and Adonis, appears</li>
+        <li><strong>1594</strong>:  Shakespeare’s first printed play, Titus Andronicus, appears</li>
+        <li><strong>1596</strong>:  Shakespeare’s son, Hamnet, dies</li>
+        <li><strong>1598</strong>:  Shakespeare is first mentioned as a sonneteer and author of 12 plays in Palladis Tamia</li>
+        <li><strong>1599</strong>:  Shakespeare’s acting company takes down its old theater and uses the timber to build the Globe</li>
+        <li><strong>1603</strong>:  Hamlet appears in print</li>
+        <li><strong>1609</strong>:  Shakespeare’s Sonnets appears in print</li>
+        <li><strong>1613</strong>:  the Globe burns down during a performance of Henry VIII and is rebuilt within a year</li>
+        <li><strong>1616</strong>:  Shakespeare writes his will and passes away on 4/23</li>
+      </ul>
+  </div>
+  <p>* Source on
+    <a id="tribute-link" href="https://shakespearedocumented.folger.edu/timeline-shakespeares-life" target="_blank">Shakespeare's Timeline</a>
+  </p>
+  <h4>See more information about him from
+    <a id="tribute-link" href="https://en.wikipedia.org/wiki/William_Shakespeare" target="_blank">Shakespeare's wikipedia page</a>!
+  </h4>
+</main>
+
+// CSS
+main {
+  background-color: #e2e9e9;
+}
+h1 {
+  text-align: center;
+  color: #d4af37;
+  font-size: 90px;
+  line-height: 0.9;
+}
+h2 {
+  text-align: center;
+  color: #363b49;
+  font-size: 60px;
+  line-height: 0.8;
+}
+#subtitle {
+  font-size: 45px;
+  color: #364949;
+}
+body {
+  text-align: center;
+  font-size: 17px;
+}
+#image {
+    height: 500px;
+}
+ul {
+  text-align: left;
+  margin-left: 25%;
+}
+#introduction {
+  margin: 10px 90px 15px 90px;
+}
+<style>
+  #tribute-info {
+    font-family: Optima, sans-serif;
+  }
+  .gray-border {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
