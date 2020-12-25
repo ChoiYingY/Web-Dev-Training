@@ -1,5 +1,5 @@
-// Website: https://codepen.io/choiyingy/pen/wvzPaYd
-// HTML
+<!-- Website: https://codepen.io/choiyingy/pen/wvzPaYd-->
+<!-- HTML-->
 <main id="main">
   <h1 id="title">William Shakespeare</h1>
   <h2 id="subtitle">The Bard of Avon</h2>
@@ -36,48 +36,47 @@
     <a id="tribute-link" href="https://en.wikipedia.org/wiki/William_Shakespeare" target="_blank">Shakespeare's wikipedia page</a>!
   </h4>
 </main>
-
-// CSS
+<!-- CSS-->
 main {
-  background-color: #e2e9e9;
+background-color: #e2e9e9;
 }
 h1 {
-  text-align: center;
-  color: #d4af37;
-  font-size: 90px;
-  line-height: 0.9;
+text-align: center;
+color: #d4af37;
+font-size: 90px;
+line-height: 0.9;
 }
 h2 {
-  text-align: center;
-  color: #363b49;
-  font-size: 60px;
-  line-height: 0.8;
+text-align: center;
+color: #363b49;
+font-size: 60px;
+line-height: 0.8;
 }
 #subtitle {
-  font-size: 45px;
-  color: #364949;
+font-size: 45px;
+color: #364949;
 }
 body {
-  text-align: center;
-  font-size: 17px;
+text-align: center;
+font-size: 17px;
 }
 #image {
     height: 500px;
 }
 ul {
-  text-align: left;
-  margin-left: 25%;
+text-align: left;
+margin-left: 25%;
 }
 #introduction {
-  margin: 10px 90px 15px 90px;
+margin: 10px 90px 15px 90px;
 }
 <style>
-  #tribute-info {
-    border-style: dotted;
-  }
-  .gray-border {
+#tribute-info {
+    font-family: Optima, sans-serif;
+}
+.gray-border {
     border-color: gray;
     border-style: solid;
     border-radius: 50%;
-  }
+}
 </style>
