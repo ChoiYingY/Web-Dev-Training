@@ -10,7 +10,7 @@
   <p id="introduction">William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English playwright, poet, and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. His extant works, including collaborations, consist of some 39 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship.<br>
     Shakespeare produced most of his known works between 1589 and 1613. His early plays were primarily comedies and histories and are regarded as some of the best work produced in these genres. He then wrote mainly tragedies until 1608, among them Hamlet, Romeo and Juliet, Othello, King Lear, and Macbeth, all considered to be among the finest works in the English language.
   </p>
-  <div id="tribute-info">
+  <div class="tribute-info">
     <h2>Timeline Of Shakespeare's Life</h2>
       <ul>
         <li><strong>1564</strong>:  William Shakespeare born in Stratford-upon-Avon on 4/26</li>
@@ -38,45 +38,51 @@
 </main>
 <!-- CSS-->
 main {
-background-color: #e2e9e9;
+  background-color: #e2e9e9;
 }
 h1 {
-text-align: center;
-color: #d4af37;
-font-size: 90px;
-line-height: 0.9;
+  text-align: center;
+  color: #d4af37;
+  font-size: 90px;
+  line-height: 0.9;
 }
 h2 {
-text-align: center;
-color: #363b49;
-font-size: 60px;
-line-height: 0.8;
+  text-align: center;
+  color: #363b49;
+  font-size: 60px;
+  line-height: 0.8;
+}
+h4 {
+  margin-bottom: 0;
+}
+#title {
+  margin: 0;
 }
 #subtitle {
-font-size: 45px;
-color: #364949;
+  font-size: 45px;
+  color: #364949;
 }
 body {
-text-align: center;
-font-size: 17px;
+  text-align: center;
+  font-size: 17px;
 }
 #image {
     height: 500px;
 }
 ul {
-text-align: left;
-margin-left: 25%;
+  text-align: left;
+  margin-left: 10%;
 }
 #introduction {
-margin: 10px 90px 15px 90px;
+  margin: 10px 90px 15px 90px;
 }
-<style>
-#tribute-info {
-    font-family: Optima, sans-serif;
+.tribute-info {
+  border-style: dotted;
+  width: 80%;
+  margin: 0 auto;
 }
 .gray-border {
-    border-color: gray;
-    border-style: solid;
-    border-radius: 50%;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 50%;
 }
-</style>
