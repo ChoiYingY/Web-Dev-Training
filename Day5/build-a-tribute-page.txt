@@ -73,7 +73,7 @@ ul {
 }
 <style>
   #tribute-info {
-    font-family: Optima, sans-serif;
+    border-style: dotted;
   }
   .gray-border {
     border-color: gray;
