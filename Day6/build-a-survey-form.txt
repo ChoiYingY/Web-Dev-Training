@@ -1,0 +1,136 @@
+<!-- Website: https://codepen.io/choiyingy/pen/wvzPqRw-->
+<!-- HTML-->
+<main id="main">
+  <h1 id="title">Interest Survey Form</h1>
+  <p id="description">Thank you for taking your time! <br>(We might recommend possible friends<br> with similar interests or share your<br> interests to others if you choose to)</p>
+  <hr>
+  <form id="survey-form">
+    <div id="name">
+    <label id="name-label">Name</label>
+    <input id="name" type="text" placeholder="Enter Your Name" required>
+    </div>
+    
+    <div id="Email">
+    <label id="email-label">Email</label>
+    <input id="Email" type="text" placeholder="username@example.com" required>
+    </div>
+    
+    <div id="Phone Num">
+      <label id="number-label">Phone Number</label>
+      <input id="Phone Num" type="text" placeholder="###-###-####" required>
+    </div>
+    
+    <div id="Age">
+      <label id="Age">Age(optional)</label>
+      <input id="Age" type="text" placeholder="Age">
+    </div>
+    
+    <div class="Gender pronoun">
+      <p class="Gender pronoun">Check all gender pronoun(s) that can apply to you:</p>
+      <label for="she"><input id="she" type="checkbox" name="she" value="she">
+        she,her,hers</label>
+      <label for="he"><input id="he" type="checkbox" name="he" value="he">
+        he,him,his</label>
+      <label for="they"><input id="they" type="checkbox" name="they" value="they">
+        they,them,their</label>
+      <input for="other" type="checkbox" name="other" value="other">
+      I have my own pronoun! <input type="text" name="other" placeholder="Enter your pronoun"/>
+      <label for="noAns"><input id="noAns" type="checkbox" name="noAns" value="noAns">
+        I prefer not to answer</label>
+    </div>
+    
+  <div class="Pets">
+    <p class="Pets">What is your favorite pet?</p>
+    <select id="dropdown" name="Pets">
+      <option disabled selected value>Choose an animal</option>
+      <option value="dog">Dogs</option>
+      <option value="cat">Cats</option>
+      <option value="rabbit">Rabbits</option>
+      <option value="hamster">Hamsters</option>
+      <option value="fish">Fishes</option>
+      <option value="bird">Birds</option>
+      <option value="other">Other</option>
+      <option value="never">I don't like any pets</option>
+      </select>
+    </div>
+    
+    <div id="sports-interest-scale">
+      <p class="question">Please rate your interest level in sports from 1 to 5 (1=lowest, 5= highest)</p>
+      <label for="one"><input id="one" type="radio" name="one" value="one">1</label>
+      <label for="two"><input id="two" type="radio" name="two" value="two">2</label>
+      <label for="three"><input id="three" type="radio" name="three" value="three">3</label>
+      <label for="four"><input id="four" type="radio" name="four" value="four">4</label>
+      <label for="five"><input id="five" type="radio" name="five" value="five">5</label>
+    </div>
+    
+    <div id="games-interest-scale">
+      <p class="question">Please rate your interest level in games from 1 to 5 (1=lowest, 5= highest)</p>
+      <label for="one"><input id="one" type="radio" name="one" value="one">1</label>
+      <label for="two"><input id="two" type="radio" name="two" value="two">2</label>
+      <label for="three"><input id="three" type="radio" name="three" value="three">3</label>
+      <label for="four"><input id="four" type="radio" name="four" value="four">4</label>
+      <label for="five"><input id="five" type="radio" name="five" value="five">5</label>
+    </div>
+    
+    <div id="friendRec">
+      <label id="friendRec">Interested to have friend recommendations?</label>
+      <label for="Yes"><input id="Yes" type="radio" name="Yes" value="Yes">Sign me up!</label>
+      <label for="No"><input id="No" type="radio" name="No" value="No">No, thanks!</label>
+    </div>
+    
+    <div id="otherFriendRec">
+      <label id="otherFriendRec">Would you mind to show up in other users' friend recommendations?</label>
+      <label for="Yes"><input id="Yes" type="radio" name="Yes" value="Yes">Yes</label>
+      <label for="No"><input id="No" type="radio" name="No" value="No">No</label>
+    <div id="additional comments">
+      <p id="additional comments">Are there any additional things that you would like to add on for your interests?</p>
+      <textarea id="comments" class="input-textarea" name="additional comment" placeholder="Enter your additional comments here!"></textarea>
+    </div>
+    <div id="submit">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+</main>
+
+<!-- CSS-->
+@import url(https://fonts.googleapis.com/css?family=Domine);
+main{
+  text-align: center;
+  font-family: 'Domine', san-serif;
+  font-size: 15px;
+  background-image: linear-gradient(110deg, rgba(160,231,229, 0.8), rgba(136, 136, 206, 0.7), rgba(255,174,188, 0.8)),
+url(https://cdn.dribbble.com/users/37530/screenshots/2071504/pattern.png);
+}
+h1{
+  margin: 0px 90px 15px 90px;
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+#description{
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px #1e3a3b;
+  margin: 0px 90px 15px 90px;
+}
+hr{
+  height:1px;
+  width:80%;
+  background-color:#FFAEBC;
+}
+#survey-form{
+  background-color: #e0ffe9;
+  width: 70%;
+  margin: 0 auto;
+  opacity: 85%;
+}
+input {
+  font-family: 'Domine', san-serif;
+  margin: 0;
+  width: 400px;
+  height: 25px;
+}
+textarea {
+  width: 500px;
+  height: 100px;
+}
