@@ -5,36 +5,45 @@
   <p id="description">Thank you for taking your time! <br>(We might recommend possible friends<br> with similar interests or share your<br> interests to others if you choose to)</p>
   <hr>
   <form id="survey-form">
-    <div id="name">
-    <label id="name-label">Name</label>
+    <div id="name" style="padding-top: 10px">
+      <label id="name-label">Name</label>
+      <br>
     <input id="name" type="text" placeholder="Enter Your Name" required>
     </div>
     
-    <div id="Email">
+    <div id="Email" style="padding-top: 10px">
     <label id="email-label">Email</label>
+      <br>
     <input id="Email" type="text" placeholder="username@example.com" required>
     </div>
     
-    <div id="Phone Num">
+    <div id="Phone-Num" style="padding-top: 10px">
       <label id="number-label">Phone Number</label>
-      <input id="Phone Num" type="text" placeholder="###-###-####" required>
+      <br>
+      <input id="Phone-Num" type="text" placeholder="###-###-####" required>
     </div>
     
-    <div id="Age">
+    <div id="Age" style="padding-top: 10px">
       <label id="Age">Age(optional)</label>
+      <br>
       <input id="Age" type="text" placeholder="Age">
     </div>
     
-    <div class="Gender pronoun">
-      <p class="Gender pronoun">Check all gender pronoun(s) that can apply to you:</p>
+    <div class="Gender-pronoun" style="padding-top: 20px">
+      <label class="Gender-pronoun">Check all gender pronoun(s) that can apply to you:</label>
+       <br>
       <label for="she"><input id="she" type="checkbox" name="she" value="she">
         she,her,hers</label>
+      <br>
       <label for="he"><input id="he" type="checkbox" name="he" value="he">
         he,him,his</label>
+      <br>
       <label for="they"><input id="they" type="checkbox" name="they" value="they">
         they,them,their</label>
+      <br>
       <input for="other" type="checkbox" name="other" value="other">
       I have my own pronoun! <input type="text" name="other" placeholder="Enter your pronoun"/>
+      <br>
       <label for="noAns"><input id="noAns" type="checkbox" name="noAns" value="noAns">
         I prefer not to answer</label>
     </div>
@@ -56,34 +65,34 @@
     
     <div id="sports-interest-scale">
       <p class="question">Please rate your interest level in sports from 1 to 5 (1=lowest, 5= highest)</p>
-      <label for="one"><input id="one" type="radio" name="one" value="one">1</label>
-      <label for="two"><input id="two" type="radio" name="two" value="two">2</label>
-      <label for="three"><input id="three" type="radio" name="three" value="three">3</label>
-      <label for="four"><input id="four" type="radio" name="four" value="four">4</label>
-      <label for="five"><input id="five" type="radio" name="five" value="five">5</label>
+      <label for="one"><input id="one" type="radio" name="sports" value="one">1</label>
+      <label for="two"><input id="two" type="radio" name="sports" value="two">2</label>
+      <label for="three"><input id="three" type="radio" name="sports" value="three">3</label>
+      <label for="four"><input id="four" type="radio" name="sports" value="four">4</label>
+      <label for="five"><input id="five" type="radio" name="sports" value="five">5</label>
     </div>
     
     <div id="games-interest-scale">
       <p class="question">Please rate your interest level in games from 1 to 5 (1=lowest, 5= highest)</p>
-      <label for="one"><input id="one" type="radio" name="one" value="one">1</label>
-      <label for="two"><input id="two" type="radio" name="two" value="two">2</label>
-      <label for="three"><input id="three" type="radio" name="three" value="three">3</label>
-      <label for="four"><input id="four" type="radio" name="four" value="four">4</label>
-      <label for="five"><input id="five" type="radio" name="five" value="five">5</label>
+      <label for="one"><input id="one" type="radio" name="games" value="one">1</label>
+      <label for="two"><input id="two" type="radio" name="games" value="two">2</label>
+      <label for="three"><input id="three" type="radio" name="games" value="three">3</label>
+      <label for="four"><input id="four" type="radio" name="games" value="four">4</label>
+      <label for="five"><input id="five" type="radio" name="games" value="five">5</label>
     </div>
     
     <div id="friendRec">
-      <label id="friendRec">Interested to have friend recommendations?</label>
-      <label for="Yes"><input id="Yes" type="radio" name="Yes" value="Yes">Sign me up!</label>
-      <label for="No"><input id="No" type="radio" name="No" value="No">No, thanks!</label>
+      <p id="friendRec-label">Interested to have friend recommendations?</p>
+      <label for="Yes"><input id="Yes" type="radio" name="friendRec" value="Yes">Sign me up!</label>
+      <label for="No"><input id="No" type="radio" name="friendRec" value="No">No, thanks!</label>
     </div>
     
     <div id="otherFriendRec">
-      <label id="otherFriendRec">Would you mind to show up in other users' friend recommendations?</label>
-      <label for="Yes"><input id="Yes" type="radio" name="Yes" value="Yes">Yes</label>
-      <label for="No"><input id="No" type="radio" name="No" value="No">No</label>
-    <div id="additional comments">
-      <p id="additional comments">Are there any additional things that you would like to add on for your interests?</p>
+      <p id="otherFriendRec-label">Would you mind to show up in other users' friend recommendations?</p>
+      <label for="Yes"><input id="Yes" type="radio" name="otherFriendRec" value="Yes">Yes</label>
+      <label for="No"><input id="No" type="radio" name="otherFriendRec" value="No">No</label>
+    <div id="additional-comments">
+      <p id="additional-comments">Are there any additional things that you would like to add on for your interests?</p>
       <textarea id="comments" class="input-textarea" name="additional comment" placeholder="Enter your additional comments here!"></textarea>
     </div>
     <div id="submit">
@@ -118,19 +127,38 @@ hr{
   width:80%;
   background-color:#FFAEBC;
 }
+[type="checkbox"]{
+  margin-top: 15px;
+}
+[type="radio"]{
+  margin-left: 5px;
+}
 #survey-form{
+  text-align: left;
   background-color: #e0ffe9;
   width: 70%;
   margin: 0 auto;
   opacity: 85%;
+  padding-left:10px;
 }
 input {
   font-family: 'Domine', san-serif;
   margin: 0;
-  width: 400px;
-  height: 25px;
+  padding: 10px 250px 10px 10px;
 }
 textarea {
-  width: 500px;
   height: 100px;
+  width: 550px;
+}
+#submit{
+  text-align: center;
+}
+button{
+  margin-top: 15px;
+  font-family: 'Domine', san-serif;
+  font-size: 50px;
+  border-radius: 15px;
+  background-color: #40E0D0;
+  color: white;
+  text-shadow: 1px 1px #000000;
 }
