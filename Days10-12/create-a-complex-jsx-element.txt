@@ -1,0 +1,9 @@
+const JSX = <div>
+    <h1>Title</h1>
+    <p>I am a paragraph</p>
+    <ul>Things I want to eat right now:
+        <li>Takoyaki</li>
+        <li>Okonomiyaki</li>
+        <li>Tonkatsu</li>
+    </ul>
+</div>
