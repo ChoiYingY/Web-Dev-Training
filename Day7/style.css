@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Gorditas);
+@import url("https://fonts.googleapis.com/css?family=M PLUS Rounded 1c");
+@import url("https://fonts.googleapis.com/css?family=Bubblegum Sans");
+body{
+  margin: 0;
+}
+main{
+  background-image: url("https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/prod-sumikko2020/assets/img/bg_ptn.png");
+  font-family: 'M PLUS Rounded 1c', san-serif;
+  color: #395D61;
+}
+#cover{
+  height: auto;
+  width: 100%;
+}
+#nav-bar{
+  background-color: #F8BDBD;
+  width: 100%;
+  height: 77px;
+}
+#header-img{
+  height: 77px;
+  position: absolute;
+  left: 0;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+li a{
+  text-decoration: none;
+  display: block;
+  padding: 24px 20px;
+  color: white;
+  font-family: 'Bubblegum Sans', san-serif;
+  font-size: 25px;
+}
+li a:hover{
+  background-color: #FFE7CB;
+  transition: 0.2s;
+}
+h2{
+  font-family: 'Gorditas', san-serif;
+  font-size: 60px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  border-bottom: 4px dotted #6AD2D2;
+  color: #69D2D2;
+}
+h3{
+  font-family: 'Gorditas', san-serif;
+  font-size: 40px;
+  margin: 10px 5% 0px;
+}
+p,ol,iframe{
+  margin: 5px 10% 0px;
+}
+#tips{
+  color: red;
+  font-size: 13px;
+  margin-top: 5px
+}
+#Schedule{
+  text-decoration: none;
+}
+#cafe-menu > div{
+  margin: 5px 1% 5px;
+  width: 50%;
+  border: 1px solid #000;
+}
+#cafe-menu > h3{
+  margin: 5px 1% 0px;
+  text-align: center;
+}
+#menu-pic{
+  height: 70%;
+  display: block;
+  margin: 2% auto;
+}
+label{
+  margin: 5px 10% 5px;
+}
+input {
+  font-family: 'Bubblegum Sans', san-serif;
+  padding: 10px 250px 10px 10px;
+  margin-left: 10%
+}
+button{
+  margin-top: 15px;
+  margin-left: 10%;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 40px;
+  background-color: #F8BDBD;
+  color: white;
+  font-family: 'Bubblegum Sans', san-serif;
+}
