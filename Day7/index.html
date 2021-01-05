@@ -5,24 +5,21 @@
   <body>
     <!-- Page inspired by href="https://sumikkogurashi-moguracafe.jp"/-->
     <main id="main">
-        <div id="cover">
-          <img id="cover" src="https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/prod-sumikko2020/content/uploads/2020/10/16021020/main_visual_a.jpg" alt="Sumikko Gurashi Cafe"/>
-        </div>
-
         <header id="header">
-          <div style="position: sticky; top: 0;">
-            <nav id="nav-bar">
-              <ul id="nav-bar">
-                <img id="header-img" src= "https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/stage-sumikko2020/content/uploads/2020/10/20215408/main_logo.png" alt="Sumikko Cafe Logo"/>
-                <li><a class="nav-link" href="#background">BACKGROUND</a></li>
-                <li><a class="nav-link" href="#information">INFORMATION</a></li>
-                <li><a class="nav-link" href="#cafe-menu">CAFE MENU</a></li>
-                <li><a class="nav-link" href="#reservation">RESERVATION</a></li>
-              </ul>
-            </nav>
-          </div>
+          <nav id="nav-bar">
+            <ul id="nav">
+              <img id="header-img" src= "https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/stage-sumikko2020/content/uploads/2020/10/20215408/main_logo.png" alt="Sumikko Cafe Logo"/> 
+            <li><a class="nav-link" href="#background">BACKGROUND</a></li>
+              <li><a class="nav-link" href="#information">INFORMATION</a></li>
+              <li><a class="nav-link" href="#cafe-menu">CAFE MENU</a></li>
+              <li><a class="nav-link" href="#reservation">RESERVATION</a></li>
+            </ul>
+          </nav>
         </header>
-      
+
+        <section id="cover">
+          <img id="cover" src="https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/prod-sumikko2020/content/uploads/2020/10/16021020/main_visual_a.jpg" alt="Sumikko Gurashi Cafe"/>
+        </section>
       
       <section id="body">
         <div class="background">
@@ -69,30 +66,36 @@
           </ol>
         </div>
 
-        <div id="cafe-menu">
-          <h2 id="cafe-menu">Cafe Menu</h2>
-          <div id="cafe-menu">
-            <h3>Food</h3>
-            <img id="menu-pic" src="https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/prod-sumikko2020/content/uploads/2020/10/23013616/web_sumikko_food_1022.jpg" alt="Food">
-            <p id="cafe-menu">☐しろくまカレー(White Bear Curry)     <strong style="color: #ff8000">¥ 1,399(excluding tax)</strong></p>
-            <p id="cafe-menu">☐お子様ランチ(Kids Meal)     <strong style="color: #ff8000">¥ 1,299(excluding tax)</strong></p>
-            <p id="cafe-menu">☐肉じゃがサンドイッチ(Nikujaga Sandwich: Meat & Potatoes)     <strong style="color: #ff8000">¥ 1,299(excluding tax)</strong></p>
-            <p id="cafe-menu">☐大人様ランチ(Special Menu: Adult Meal)     <strong style="color: #ff8000">¥ 1,599(excluding tax)</strong><br><strong id="tips">※ Up to 5 Souvenir Cups can be purchased: White Bear, Penguin?, Fried Pork Cutlet, Cat, Lizard in order, from left to right.</strong></p>
-          </div>
+        <div class="cafe-menu" id="cafe-menu">
+          <h2 id="cafe-men-title">Cafe Menu</h2>
+          <div id="cafe-menu-container" class="container">
+            <div class="flex-box">
+              <img id="menu-pic" src="https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/prod-sumikko2020/content/uploads/2020/10/23013616/web_sumikko_food_1022.jpg" alt="Food">
+              <span>
+                ☐しろくまカレー(White Bear Curry)     <strong style="color: #ff8000">¥ 1,399 ($13.58, excluding tax)</strong>
+                <br>☐お子様ランチ(Kids Meal)     <strong style="color: #ff8000">¥ 1,299 ($12.61, excluding tax)</strong>
+                <br>☐肉じゃがサンドイッチ(Nikujaga Sandwich: Meat & Potatoes)     <strong style="color: #ff8000">¥ 1,299 ($12.61, excluding tax)</strong>
+                <br>☐大人様ランチ(Special Menu: Adult Meal)     <strong style="color: #ff8000">¥ 1,599 ($15.52, excluding tax)</strong>
+                <br><strong id="tips">※ Up to 5 Souvenir Cups can be purchased: White Bear, Penguin?, Fried Pork Cutlet, Cat, Lizard in order, from left to right.</strong>
+              </span>
+            </div>
 
-          <div id="cafe-menu">
-            <h3>Desserts & Drinks</h3>
-            <img id="menu-pic" src="https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/prod-sumikko2020/content/uploads/2020/10/23013618/web_sumikko_ice_1022.jpg" alt="Desserts & Drinks">
-            <p id="cafe-menu">☐すみっコぐらしのなかよしミニアイス＜3つセット＞(Sumikko Gurashi Good Friends Mini Ice ＜Set of 3＞     <strong style="color: #ff8000">¥ 799(excluding tax)</strong><br><strong id="tips">※You can choose to order an Order Set of 5(original trio + Fried Pork Cutlet & Lizard), which costs ¥ 999 (excluding tax)</strong></p>
-            <p id="cafe-menu">☐もぐらのおうちのたからものパフェ(Mole's house parfait)     <strong style="color: #ff8000">¥ 1,299(excluding tax)</strong></p>
-            <p id="cafe-menu">☐すみっコぐらしオレンジ(Sumikko Gurashi Orange Juice)     <strong style="color: #ff8000">¥ 999(excluding tax)</strong></p>
-            <p id="cafe-menu">☐みんなのたからものソーダ(Everybody's Treasure Soda)     <strong style="color: #ff8000">¥ 999(excluding tax)</strong></p>
+            <div class="flex-box">
+              <img id="menu-pic" src="https://s3-ap-northeast-1.amazonaws.com/img.fancommerce.jp/prod-sumikko2020/content/uploads/2020/10/23013618/web_sumikko_ice_1022.jpg" alt="Desserts & Drinks">
+              <span>
+                ☐すみっコぐらしのなかよしミニアイス＜3つセット＞(Sumikko Gurashi Good Friends Mini Ice ＜Set of 3＞     <strong style="color: #ff8000">¥ 799 ($7.76, excluding tax)</strong>
+                <br><strong id="tips">※You can choose to order an Order Set of 5(original trio + Fried Pork Cutlet & Lizard), which costs ¥ 999 ($9.70, excluding tax)</strong>
+                <br>☐もぐらのおうちのたからものパフェ(Mole's house parfait)     <strong style="color: #ff8000">¥ 1,299 ($12.61, excluding tax)</strong>
+                <br>☐すみっコぐらしオレンジ(Sumikko Gurashi Orange Juice)     <strong style="color: #ff8000">¥ 999 ($9.70, excluding tax)</strong>
+                <br>☐みんなのたからものソーダ(Everybody's Treasure Soda)     <strong style="color: #ff8000">¥ 999 ($9.70, excluding tax)</strong>
+              </span>
+            </div>
           </div>
         </div>
 
         <div id="reservation">
           <h2 id="reservation">Reservation</h2>
-          <p style="font-size: 20px; margin-left: 10%; margin-top: 1%">Cost: ¥ 650(excluding tax) / 1 person</p>
+          <h4>Cost: ¥ 650(excluding tax) / 1 person</h4>
           <form id="form" action="https://www.freecodecamp.com/email-submit">
             <div id="name" style="padding-top: 10px">
               <label id="number-label">Number of registrant</label><br>
@@ -108,6 +111,16 @@
           </form>
         </div>
       </section>
+
+      <footer>
+        <ul>
+          <li><a class="footer-link" href="#">User Guide</a></li>
+          <li><a class="footer-link" href="#">FAQ</a></li>
+          <li><a class="footer-link" href="#">Terms of Service</a></li>
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+        </ul>
+        <span class="footer-copyright">© 2020 San-X Co., Ltd. All Rights Reserved.</span>
+      </footer>
     </main>
   </body>
 </html>
