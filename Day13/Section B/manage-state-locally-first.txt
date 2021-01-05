@@ -1,0 +1,45 @@
+class DisplayMessages extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: '',
+      messages: []
+    }
+    // new addition:
+    this.handleChange = this.handleChange.bind(this);
+    this.submitMessage = this.submitMessage.bind(this);
+  }
+
+  // Add handleChange() and submitMessage() methods here
+  handleChange(event){
+    this.setState({
+      input: event.target.value
+    });
+  }
+
+  submitMessage(){
+    this.setState({
+      input: '',
+      messages: this.state.messages.concat(this.state.input)
+    });
+  }
+
+  render() {
+    // new addition:
+    const event = this.state.messages.map(
+      (message, index) => {
+        return <li key={index}>{message}</li>
+      });
+    
+    return (
+      <div>
+        <h2>Type in a new Message:</h2>
+        { /* Render an input, button, and ul below this line */ }
+        <input onChange={this.handleChange} value={this.state.input}></input>
+        <button onClick={this.submitMessage}>Submit</button>
+        <ul>{event}</ul>
+        { /* Change code above this line */ }
+      </div>
+    );
+  }
+};
