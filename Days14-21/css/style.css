@@ -11,7 +11,7 @@ body{
 main{
 	background-image: linear-gradient(127deg, rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url("http://www.kanahei.com/upload/2014/12/01_k_1280_1024.jpg");
 }
-h2,h3{
+h2,h3,h4{
 	font-family: 'Cormorant', san-serif;
 }
 p,li,span{
@@ -57,12 +57,17 @@ h3{
 	margin: 1% 5% 10px;
 	color: #4AB591;
 }
+h4{
+	font-size: 1.5em;
+	margin: 5px 5% 0px;
+	color: #7072DB;
+}
 p{
 	margin: 5px 5% 0px;
 	color: #7072DB;
 }
 .description,iframe{
-	margin: 5px 10% 0px;
+	margin: 1.5% 10% 0px;
 }
 #scrollButton{
 	position: fixed;
@@ -79,11 +84,11 @@ p{
 	background-color: gray;
 }
 .flex-box{
+	border-top-style: none;
 	margin-top: 2%;
 	padding-top: 1%;
 	display: flex;
 	justify-content: space-around;
-	border-top-style: none;
 }
 #pictureOfHK{
 	margin: 1% 0px;
@@ -92,12 +97,32 @@ p{
 .myArt{
 	width: 35%;
 	margin-bottom: 1.5%;
+	margin: 5px 5% 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.myArt:hover{
+	width: 100%;
+}
+.flex-container{
+	border-top-style: none;
+	margin: 5px 5% 0px;
+	margin-top: 3%;
+	flex-direction: column;
+}
+ol{
+	font-family: 'Eczar', san-serif;
+	color: #B98B79;
+}
+.flex-paragraph{
+	color: #B98B79;
+	text-align: center;
 }
 footer{
 	background-color: #B5B5B5;
 	margin-top: 3%;
 	height: 125px;
-	color: #E3FF00;
 }
 #footer-paragraph{
 	margin-left: 3%;
