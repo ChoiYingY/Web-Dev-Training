@@ -11,10 +11,10 @@ body{
 main{
 	background-image: linear-gradient(127deg, rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("http://www.kanahei.com/upload/2014/12/01_k_1280_1024.jpg");
 }
-h2,h3,h4{
+h1,h2,h3,h4,button{
 	font-family: 'Cormorant', sans-serif;
 }
-p,li,span,ol,.img-description{
+p,li,span,ol,.img-description,#project-link{
 	font-family: 'Eczar', sans-serif;
 }
 ul{
@@ -47,22 +47,25 @@ li a{
 	border-top: dashed;
 	border-color: #FFFF93;
 }
-h2{
-	font-size: 3em;
+h1{
+	font-size: 3.5em;
 	margin: 3% 0 0 10px;
 	color: #F28C8C;
 }
-h3{
-	font-size: 2.5em;
+h2{
+	font-size: 2.75em;
 	margin: 1% 5% 10px;
 	color: #4AB591;
 }
-p,h4{
+p,h3,h4{
 	margin: 5px 5% 0px;
 	color: #7072DB;
 }
-h4{
+h3{
 	font-size: 1.5em;
+}
+h4{
+	font-size: 1.125em;
 }
 ol,.flex-paragraph{
 	color: #B98B79;
@@ -70,7 +73,7 @@ ol,.flex-paragraph{
 #footer-paragraph,.footer-link{
 	color: #E4FF1A;
 }
-.description,iframe{
+.description,iframe,video{
 	margin: 1.5% 10% 0px;
 }
 #scrollButton{
@@ -124,13 +127,17 @@ ol,.flex-paragraph{
 	opacity: 0.7;
 	font-size: 0.8em;
 }
-.picture{
+#arts2020,#arts2019{
+	margin: 5px 10% 0px;
+	flex-direction: row;
+}
+.picture19,.picture20,.design{
 	width: 100%;
 	margin: 5px auto 1%;
 	display: block;
 }
-.picture:hover{
-	width: 125%;
+.picture19:hover, .picture20:hover{
+	transform: scale(3);
 }
 .flex-container{
 	border-top-style: none;
@@ -140,6 +147,18 @@ ol,.flex-paragraph{
 }
 .flex-paragraph{
 	text-align: center;
+}
+#more-proj-details-btn, #more-details-about-ME-btn{
+	border: none;
+	border-radius: 25px;
+	margin: 2% 10% 1%;
+	padding: 2%;
+	font-size: 2em;
+	background-color: #4AB591;
+	color: white;
+}
+#more-proj-details-btn:hover, #more-details-about-ME-btn:hover{
+	background-color: #299A77;
 }
 footer{
 	background-color: #B5B5B5;
