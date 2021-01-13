@@ -4,14 +4,16 @@
     <script type="text/javascript" src="js/script.js"></script>
   </head>
 
-	<body>
-		<main id="main">
-			<nav id="nav-bar">
+  <body>
+    <main id="main">
+      <nav id="nav-bar">
         <ul id="nav">
+          <li><a class="nav-link" href="homePage.html">Home Page</a></li>
           <li><a class="nav-link" href="background.html">Background</a></li>
-          <li><a class="nav-link" href="selfIntro.html">More About Me</a></li>
+          <li><a class="nav-link" href="myInterest.html">My Interests</a></li>
           <li><a class="nav-link" href="myArt.html">My Arts</a></li>
           <li><a class="nav-link" href="myProj.html">My Projects</a></li>
+          <li><a class="nav-link" href="experience.html">Experience</a></li>   
         </ul>
       </nav>
 
@@ -27,28 +29,42 @@
             <a href="https://sites.google.com/stonybrook.edu/its101stonyscape">website of StonyScape</a>
             that introduces its function, but unfortunately is not available to people that doesn't have a Stony Brook Email.
           </span>
-          <h2 style="margin-top: 1.25%">Preview of that website:</h2>
-          <div class="flex-box">
-            <div class="flex-container">
-              <img class="design" src="picture/preview.png">
-              <div class="img-description">Preview of our Web</div>
+
+          <h2 style="margin-top: 1.25%; margin-bottom: 0;">Preview of that website:</h2>
+          <h3 style="color: #4AB591;">* Click on the image to see details.</h3>
+          <div class="flex-box" style="display: flex; flex-direction: row; margin: 0 5% 0; padding-top: 0;">
+            <div class="img-container" style="margin: 0 5% 0;">
+              <img class="design" id="img1" src="picture/preview.png" alt="Preview of our introductory web" style="width: 105%;" onclick="display('picture/preview.png', 'Preview of our Web')">
             </div>
-            <div class="flex-container">
-              <img class="design" src="picture/web-example.jpg">
-              <div class="img-description">Sample design of StonyScape Web</div>
+
+            <div class="img-container" style="margin: 0 5% 0; padding-bottom: 2%;" onclick="showModal()">
+              <img class="design" src="picture/web-example.jpg" alt="Preview of our StonyScape web" style="width: 97%;" onclick="display('picture/web-example.jpg', 'This is how the StonyScape should look like as graphics. On home page, only offical accounts verified by school(ex. clubs/ school resident quad) can post here, and the users can reply by clicking the bubble(the original poster will seen the comments as a group chat). Users can connect with each other by the recommendation of other users that are taking same courses / have similar interest filled in form when they first registered acoounts in StonyScape before.')">
             </div>
+
+            <div class="modal" id="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal_img" src="" alt="Preview of our introductory web" style="width: 100%;"> 
+                <p id="modal_description" style="margin-top: 2%; color: #9D7160;">Preview of our Web</p>
+              </div>
+            </div>
+
           </div>
-          <div class="divide-line">
+          <div class="divide-line" style="margin-top: 2%;">
             <h2>Summer project for Merit Program: SharkSweeper(pygame)</h2>
             <video height="250" width="450" controls="controls">
               <source src="video/merit-proj-vid.mp4" type="video/mp4">
             </video>
+            <p style="margin: 2% 10% 0">It is a single player puzzle game inspired by minesweeper. In SharkSweeper, the players have to clear grid and find the treasure without detonating any of the hidden mines(shark). There is hint as numbers when you click on the blank spot; for example, if it shows 2, that means there are 2 sharks around the 8 neighboring boxes. In order to raise the flag on the suspected mines, the player can press up/down key while clicking on the suspected position.
+              <br>In addition to that, there is helper called lighting pearl that can light up 4 boxes around the surrounding(up, down, left & right) if you click on it. If there is shark(s) around the pearl, they will go away(revealed shark picture in the game w/o losing.<br>
+              <span style="color: red;">* Here is the <a href="https://github.com/ChoiYingY/Sharksweeper_Demo.git">link to the github demo of the SharkSweeper</a>, where the pictures of treasure, sharks & pearl will be colored box instead.</span>
+            </p>
           </div>
         </div>
         <button id="scrollButton" onclick="scrollToBottom()">↓</button>
       </section>
 
-	  	<footer>
+      <footer>
         <p id="footer-paragraph">Background photo Copyright to © kanahei 2001-2021</p>
         <ul>
           <li><a class="footer-link" href="https://github.com/ChoiYingY">Link to my github</a></li>
