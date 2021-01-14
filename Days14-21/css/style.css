@@ -213,6 +213,28 @@ ol,.flex-paragraph{
 a{
 	color: red;
 }
+.grid-container{
+	margin: 1% 10%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 50px;
+	padding: 10px;
+}
+.grid-container h2{
+	color: #5F99AB;
+	font-size: 3em;
+}
+.grid-container h3{
+	color: #67779A;
+}
+.grid-container p{
+	color: #6F84B5;
+	margin-left: 10%;
+}
+.grid-container div{
+	margin-bottom: 1.5%;
+	background-image: linear-gradient(-70deg, rgba(214, 242, 204, 0.75) 35%, rgba(192, 245, 223, 0.75) 65%, rgba(179, 246, 245, 0.75) 100%);
+}
 footer{
 	background-color: #B5B5B5;
 	margin-top: 3%;
