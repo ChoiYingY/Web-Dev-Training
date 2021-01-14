@@ -210,6 +210,9 @@ ol,.flex-paragraph{
   text-decoration: none;
   cursor: pointer;
 }
+a{
+	color: red;
+}
 footer{
 	background-color: #B5B5B5;
 	margin-top: 3%;
